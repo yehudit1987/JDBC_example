@@ -9,7 +9,8 @@ import javax.swing.table.*;
 public class DisplayQueryResults extends JFrame
 {
 	
-	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\îãòé äîçùá - äàåğéáøñéèä äôúåçä\\ñãğä áúëğåú îú÷ãí áùôú â'àååä 20503\\JDBC Lecture\\students";
+	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\Ã®Ã£Ã²Ã© Ã¤Ã®Ã§Ã¹Ã¡ - Ã¤Ã Ã¥Ã°Ã©Ã¡Ã¸Ã±Ã©Ã¨Ã¤ Ã¤Ã´ÃºÃ¥Ã§Ã¤"
+	+"\\Ã±Ã£Ã°Ã¤ Ã¡ÃºÃ«Ã°Ã¥Ãº Ã®ÃºÃ·Ã£Ã­ Ã¡Ã¹Ã´Ãº Ã¢'Ã Ã¥Ã¥Ã¤ 20503\\JDBC Lecture\\students";
 	private static final String USERNAME="kerido";
 	private static final String PASSWORD="kerido";
 	
