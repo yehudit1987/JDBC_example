@@ -9,8 +9,7 @@ import javax.swing.table.*;
 public class DisplayQueryResults extends JFrame
 {
 	
-	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\îãòé äîçùá - äàåðéáøñéèä äôúåçä"
-	+"\\ñãðä áúëðåú îú÷ãí áùôú â'àååä 20503\\JDBC Lecture\\students";
+	private static final String DATABASE_URL="jdbc:derby:C:\\Users\\yehudit\\Documents\\מדעי המחשב - האוניברסיטה הפתוחה\\סדנה בתכנות מתקדם בשפת ג'אווה 20503\\JDBC Lecture\\students";
 	private static final String USERNAME="kerido";
 	private static final String PASSWORD="kerido";
 	
@@ -23,7 +22,7 @@ public class DisplayQueryResults extends JFrame
 		{
 			tableModel=new ResultSetTableModel (DATABASE_URL, USERNAME, PASSWORD, DEFAULT_QUERY);
 			final JTextArea queryArea=new JTextArea (DEFAULT_QUERY, 3, 100);
-			queryArea.setWrapStyleWord(true);//**explain next both
+			queryArea.setWrapStyleWord(true);
 			queryArea.setLineWrap(true);
 			JScrollPane scrollpane=new JScrollPane (queryArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
 					ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -151,4 +150,6 @@ public class DisplayQueryResults extends JFrame
 	} 
 		
 	}
+
+
 
