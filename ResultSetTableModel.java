@@ -20,7 +20,7 @@ public class ResultSetTableModel extends AbstractTableModel
 	public ResultSetTableModel (String url, String userName, String password, String query) throws SQLException
 	{
 		connection=DriverManager.getConnection(url, userName, password);
-		statement=connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);//**
+		statement=connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		
 		connectedToDatabase=true;
 		setQuery(query);
@@ -71,7 +71,7 @@ public class ResultSetTableModel extends AbstractTableModel
 		return "";
 	}
 	
-	public void setQuery (String query) throws SQLException, IllegalStateException //**explain why throws
+	public void setQuery (String query) throws SQLException, IllegalStateException 
 	{
 		if(!connectedToDatabase)
 			throw new IllegalStateException ("Not Connected to Database");
@@ -103,7 +103,7 @@ public class ResultSetTableModel extends AbstractTableModel
 	      return ""; // if problems, return empty string for column name
 	   } 
 	
-	 //necessary method
+	 
 	public void disconnectFromDatabase()
 	{
 		if (connectedToDatabase)
